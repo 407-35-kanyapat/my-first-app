@@ -2,8 +2,7 @@ import streamlit as st
 
 #ส่วนที่ 1 หัวข้อหน้าเว็บ (Title สีแดง)
 st.markdown(
-    '<h1 style="color:red;">🏋️ แอปพลิเคชันคำนวณค่าดัชนีมวลกาย BMI</h1>',
-    unsafe_allow_html=True
+    '<h1 style="color:#e63946;">🤸 แอปพลิเคชันคำนวณค่าดัชนีมวลกาย BMI</h1>',unsafe_allow_html=True)
 st.write("กรอกข้อมูลน้ำหนักและส่วนสูงของคุณ เพื่อเช็กสุขภาพเบื้องต้น")
          
 #ส่วนที่ 2 สร้างช่องรับค่าน้ำหนัก และ ส่วนสูง
