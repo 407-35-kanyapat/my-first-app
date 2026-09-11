@@ -73,12 +73,13 @@ def show_result_dialog(ans1, ans2, ans3, ans4, ans5, ans6, ans7):
         score += 1
     else:
         st.error(f"❌ ข้อ 4: ยังไม่ถูกต้อง (คุณตอบ '{u_ans4}')")
-    if u_ans5 == " หยก":
+    if u_ans5 == "เท้า":
         st.success("✅ ข้อ 5: ถูกต้อง")
         score += 1
     else:
         st.error(f"❌ ข้อ 5: ยังไม่ถูกต้อง (คุณตอบ '{u_ans5}')")
-    if u_ans6 == "เท้า":
+    if u_ans6 == "หยก
+    ":
         st.success("✅ ข้อ 6: ถูกต้อง")
         score += 1
     else:
