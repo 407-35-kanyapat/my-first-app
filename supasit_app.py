@@ -91,16 +91,18 @@ def show_result_dialog(ans1, ans2, ans3, ans4, ans5, ans6, ans7):
 
     st.info(f"🏆 ได้คะแนนรวม: {score} คะแนน")
 
-    if score == 7:
-    st.success("เก่งมาก🎉")
-    elif score >= 4 and score <= 6:
-    st.info("พยายามอีกนิดนะ ใกล้เต็มแล้ว!👓")
-    elif score == 3:
-    st.info("มาได้ครึ่งทางแล้ว! พยายามอีกหน่อยนะ!️‍🔥")
-    elif score >= 1 and score <= 2:
-    st.info("ลองเล่นอีกสักครั้ง..💪 ")
-    else:
+  if score == 7:
+    st.success("เก่งมาก🎉 ")
+elif score >= 4 and score <= 6:
+    st.info("พยายามอีกนิดนะ ใกล้เต็มแล้ว!️‍🔥")
+elif score == 3:
+    st.info("มาได้ครึ่งทางแล้ว! พยายามอีกหน่อยนะ!💪 ")
+elif score >= 1 and score <= 2:
+    st.info("ลองเล่นอีกสักครั้ง..⭐ ")
+else:
     st.error("คุณแพ้แล้ว😭")
+
+
 
 
 
