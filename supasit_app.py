@@ -73,12 +73,12 @@ def show_result_dialog(ans1, ans2, ans3, ans4, ans5, ans6, ans7):
         score += 1
     else:
         st.error(f"❌ ข้อ 4: ยังไม่ถูกต้อง (คุณตอบ '{u_ans4}')")
-    if u_ans5 == " เท้า":
+    if u_ans5 == " หยก":
         st.success("✅ ข้อ 5: ถูกต้อง")
         score += 1
     else:
         st.error(f"❌ ข้อ 5: ยังไม่ถูกต้อง (คุณตอบ '{u_ans5}')")
-    if u_ans6 == "หยก":
+    if u_ans6 == "เท้า":
         st.success("✅ ข้อ 6: ถูกต้อง")
         score += 1
     else:
@@ -113,7 +113,7 @@ st.button("🎮 เริ่มเล่นเกม", on_click=reset_game)
 
 # 2. แถบแสดงเวลานับถอยหลัง
 if "start" in st.session_state and not st.session_state.get("is_ended", False):
-    time_left = int(120 - (time.time() - st.session_state.start))
+    time_left = int(90 - (time.time() - st.session_state.start))
 
     if time_left > 0:
         st.error(f"⏳ เหลือเวลา: {time_left} วินาที")
@@ -176,4 +176,4 @@ if st.session_state.get("is_ended", False):
     show_result_dialog(ans1,ans2,ans3,ans4,ans5,ans6,ans7)
 
 st.divider()
-st.write("นางสาวกัญญาพัชร ศักดิ์เสือ เลขที่ 35 ม.4/7")
+
